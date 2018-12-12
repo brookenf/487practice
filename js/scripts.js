@@ -2,15 +2,15 @@ $(function(){
   console.log('Hello, fancy ladies');
 
   //click event
-  // $('#clickable').click(function(){
-  //   $('#scott').fadeToggle();
-  // });
-  var scott = document.getElementById('scott');
-  var clickable = document.getElementById('clickable');
-  clickable.onclick = function scottAppears(){
-    scott.style.display = 'block';
-  }
-  scottAppears()
+  $('#clickable').click(function(){
+    $('#scott').fadeToggle();
+  });
+  // var scott = document.getElementById('scott');
+  // var clickable = document.getElementById('clickable');
+  // clickable.onclick = function scottAppears(){
+  //   scott.style.display = 'block';
+  // }
+  // scottAppears()
 
   //AJAX call
   var url = './js/journalists.json';

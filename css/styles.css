@@ -1,0 +1,49 @@
+.site{
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 150px 75px 300px 150px;
+  grid-template-areas:
+    'hd hd hd hd hd hd'
+    'nav nav nav nav nav nav'
+    'side side intro intro intro intro'
+    'ft ft ft ft ft ft';
+}
+
+.flex{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-column{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.header{
+  grid-area: hd;
+  background-color: #00ffff;
+}
+
+.nav{
+  grid-area: nav;
+  background-color: #0e30ee;
+}
+
+.sidebar-left{
+  grid-area: side;
+  background-color: #372c32;
+}
+
+.intro{
+  grid-area: intro;
+  background-color: #2918a1;
+}
+
+.footer{
+  grid-area: ft;
+  background-color: #49b1cd;
+}

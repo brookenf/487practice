@@ -4,6 +4,7 @@ $(function(){
   //click event
   $('#clickable').click(function(){
     $('#scott').fadeToggle();
+    alert('Did anything exciting happen this weekend? - Scott Geier, on a Wednesday');
   });
   // var scott = document.getElementById('scott');
   // var clickable = document.getElementById('clickable');

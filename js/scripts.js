@@ -10,7 +10,7 @@ $(function(){
   clickable.onclick = function scottAppears(){
     scott.style.display = 'block';
   }
-  scottAppears();
+  scottAppears()
 
   //AJAX call
   var url = './js/journalists.json';

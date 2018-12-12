@@ -26,12 +26,18 @@ $(function(){
     dataType: 'json',
     success: function(data){
       console.log(data);
-      html += '<h1>Journalists Through History</h1>';
+      html += '<h1 id="popup">Journalists Through History</h1>';
       for (var a = 0; a < data.length; a++) {
         console.log(data[a].name);
         html += '<h1>' + data[a].name + '</h1><p>' + data[a].description + '</p>';
       }
-      $('#results').html(html);
+      $('#results').append(html);
+      $('#popup').mouseenter(function(){
+        $('#tooltip').fadeToggle();
+      });
+      $('#popup').mouseleave(function(){
+        $('#tooltip').fadeToggle();
+      });
     }
 
   });//end of AJAX call

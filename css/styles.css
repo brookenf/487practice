@@ -19,6 +19,17 @@ table, th, td {
   margin-top: 1%;
 }
 
+#tooltip{
+  position: absolute;
+  top: 220px;
+  width: 150px;
+  height: 100px;
+  background: black;
+  border: solid 1px black;
+  box-shadow: 2px 2px 3px #000;
+}
+
+
 img{
   width: 250px;
   height: auto;
